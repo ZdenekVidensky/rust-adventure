@@ -1,0 +1,3 @@
+id;description;options;is_final
+1;Tohle je prvni scena;Prvni volba:1,Druha volba:2;false
+2;Tohle je finalni scena;;true
