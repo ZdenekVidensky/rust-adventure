@@ -18,7 +18,7 @@ impl Scene {
         let description = values[1].to_string();
         let is_final = values[3].parse::<bool>().unwrap();
 
-        let options_values: Vec<&str> = values[2].split(',').collect();
+        let options_values: Vec<&str> = values[2].split('+').collect();
         let mut options: Vec<Option> = Vec::new();
 
         if options_values[0].contains(':') {
@@ -80,10 +80,14 @@ fn game_loop(scenes: HashMap<u8, Scene>) {
 
 fn print_scene(scene: &Scene) {
     println!("{}", scene.description);
-    println!("------------------------");
+    
+    if scene.options.len() > 0 {
+        println!("Co uděláš?");
+        println!("------------------------");
 
-    for (i, option) in scene.options.iter().enumerate() {
-        println!("{}: {}", i + 1, option.description);
+        for (i, option) in scene.options.iter().enumerate() {
+            println!("{}: {}", i + 1, option.description);
+        }
     }
 }
 
