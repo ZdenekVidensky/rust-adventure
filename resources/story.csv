@@ -1,0 +1,12 @@
+id;description;options;is_final
+1;Princezna našeho království byla unesena bandou hnusných skřetů.;Vydám se po stopách té skřetí bandy:2+Kašlu na to, jdu na pivo:3;false
+2;Nemusel jsi se ani moc snažit, bandu jsi vypátral po čuchu. Dorazil jsi k jeskyni, před kterou stojí jedna stráž.;Zaútočit mečem:4+Zastřelit lukem:5+Proplížit se:5;false
+3;Pivo ti moc chutnalo. Je ti úplně šumák, co se stalo s princeznou.;;true
+4;Jakmile jsi vytáhl meč a vyběhl jsi na skřeta, zakopnul jsi o kořen a padl jsi rovnou na jeho kopí. Je s tebou ámen.;;true
+5;Tvá akce byla úspěšná. Dostal ses do jeskyně. Je před tebou rozcestí.;Vydat se vpravo:6+Vydat se vlevo:7;false
+6;Narazil jsi na spíš plnou skřetí pálenky a uchlastal ses k smrti;;true
+7;Dorazil jsi do velké místnosti a viděl jsi 4 skřety jak hlídají spoutanou princeznu.;Pustit se s nimi do boje mečem:8+Zkusit zabít potichu jednoho po druhém:9+Sestřelit krápník:9;false
+8;Opravdu ses chtěl pustit do 4 skřetů sám? Asi víš, jak to dopadlo. Rozsekali tě na maděru;;true
+9;Podařilo se ti zabít 3 skřety a poslední největší si tě všimnul;Zaútočit mečem:10+Utéct:11;false
+10;Podařilo se ti přemoci posledního skřeta. Zachránil jsi princeznu a od vděčného krále jsi dostal její ruku a půl království. Konec;;true
+11;Jak ses pokusil zbaběle utéct, skřet tě dohonil a proklál tě kopím. Jsi mrtvý;;true
